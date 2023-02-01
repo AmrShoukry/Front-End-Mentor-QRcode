@@ -1,0 +1,86 @@
+:root
+{
+    --max-width: 280px;
+    --outer-padding: 8px;
+    --inner-padding: 32px;
+    --border-radius: 8px;
+}
+
+
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Cairo', sans-serif;
+}
+
+body
+{
+    height: 100vh;
+    background-color: #D6E1F0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text
+{
+    position: fixed;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -10;
+    left: 0;
+    top: 0;
+}
+
+p.repeated
+{
+    -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    text-transform: uppercase;
+    font-size: 30px;
+    width: fit-content;
+    transform-origin: left;
+    transform: rotate(-45deg);
+    white-space: nowrap;
+    margin: 0;
+    font-weight: 900;
+}
+
+
+
+.card
+{
+    background-color: #FFFFFD;
+    max-width: calc(var(--max-width) + 2 * var(--outer-padding));
+    border-radius: var(--border-radius);
+    padding: var(--outer-padding);
+}
+
+.card .qr
+{
+    width: var(--max-width);
+    padding: var(--inner-padding);
+    background-color: #2b7ef8;
+    border-radius: var(--border-radius);
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.card .qr img
+{
+    width: 100%;
+}
+
+.card .textDescription
+{
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.card .textDescription p
+{
+    color: darkgrey;
+    line-height: 1.2;
+}
