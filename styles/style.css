@@ -1,9 +1,9 @@
 :root
 {
-    --max-width: 280px;
-    --outer-padding: 8px;
-    --inner-padding: 32px;
-    --border-radius: 8px;
+    --max-width: 320px;
+    --outer-padding: 16px;
+    --inner-padding: 40px;
+    --border-radius: 16px;
 }
 
 
@@ -76,7 +76,8 @@ p.repeated
 .card .textDescription
 {
     text-align: center;
-    margin-bottom: 16px;
+    margin-bottom: 32px;
+    margin-top: 16px;
 }
 
 .card .textDescription p
